@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">Gemstone Online Price Analysis
+<h1 style="text-align: center;">Gemstone Online Analysis
 </h1>  
 <a href="#"><img src="picture/tsavorite_116.76_carat_square-cushion_smithsonian_dark_background.jpg" width="850" height="500" alt="descriptive text" /></a>
 <br />
