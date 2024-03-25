@@ -67,8 +67,15 @@ As for the 'Gem_type' column, I will create a list containing all the types of g
 <br />
 Using this code 'df['Color'] = df['Title'].apply(get_color)' to extract each color value from the column 'Title', and to obtain the gem type, I will use this code 'df['Gem_type'] = df['Title'].apply(get_gem_type)'. As shown in the image below, the two new columns now have their corresponding values.
 <br />
-<a href="#"><img src="picture/getgemtypefunc.png" width="800" height="290" alt="descriptive text" /></a>
+<a href="#"><img src="picture/values_in_colorandgemtype.png" width="900" height="375" alt="descriptive text" /></a>
 <br />
-<span style="color: rgba(0, 0, 0, 0.2);">List and Function to Extract Gem Type</span>
+<span style="color: rgba(0, 0, 0, 0.2);">Color and Gem Type</span>
+<br />
+<br />
+Finally, I will use pandas interpolate to fill up the missing values in the 'Estimated RRP' column. First, I'll create a copy of my DataFrame with only the 'Price' and 'Estimated RRP' columns, so I can use the 'interpolate()' pandas function. After that, I will transfer the values from the copy to my main DataFrame using this code 'df[['Price', 'Estimated RRP']] = dfprice_rrp'. Now, all the missing values in the 'Estimated RRP' column have been populated.
+<br />
+<a href="#"><img src="picture/interpolated ERRP.png" width="900" height="400" alt="descriptive text" /></a>
+<br />
+<span style="color: rgba(0, 0, 0, 0.2);">Interpolate Column Estimated RRP</span>
 <br />
 <br />
