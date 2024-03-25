@@ -51,3 +51,24 @@ To address this issue, I investigated the 'Price' column and discovered that the
 <span style="color: rgba(0, 0, 0, 0.2);">Getting the L, W, and H</span>
 <br />
 <br />
+The fifth step involved creating two more new columns, namely 'Color' and 'Gem_type', using 'df.insert()'. To extract the color from the 'Title' column, I created a function. This function parses the values from the 'Title' column and returns the particular color it finds. 
+<br />
+<a href="#"><img src="picture/getcolorfunc.png" width="800" height="290" alt="descriptive text" /></a>
+<br />
+<span style="color: rgba(0, 0, 0, 0.2);">Function Color Extraction</span>
+<br />
+<br />
+As for the 'Gem_type' column, I will create a list containing all the types of gems present in the online gemstone store. Then, I will create a function to extract the gem type information by parsing the values of the 'Title' column.
+<br />
+<a href="#"><img src="picture/getgemtypefunc.png" width="800" height="290" alt="descriptive text" /></a>
+<br />
+<span style="color: rgba(0, 0, 0, 0.2);">List and Function to Extract Gem Type</span>
+<br />
+<br />
+Using this code 'df['Color'] = df['Title'].apply(get_color)' to extract each color value from the column 'Title', and to obtain the gem type, I will use this code 'df['Gem_type'] = df['Title'].apply(get_gem_type)'. As shown in the image below, the two new columns now have their corresponding values.
+<br />
+<a href="#"><img src="picture/getgemtypefunc.png" width="800" height="290" alt="descriptive text" /></a>
+<br />
+<span style="color: rgba(0, 0, 0, 0.2);">List and Function to Extract Gem Type</span>
+<br />
+<br />
