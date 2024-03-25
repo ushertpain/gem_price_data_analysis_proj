@@ -74,7 +74,7 @@ Using this code 'df['Color'] = df['Title'].apply(get_color)' to extract each col
 <br />
 Finally, I will use pandas interpolate to fill up the missing values in the 'Estimated RRP' column. First, I'll create a copy of my DataFrame with only the 'Price' and 'Estimated RRP' columns, so I can use the 'interpolate()' pandas function. After that, I will transfer the values from the copy to my main DataFrame using this code 'df[['Price', 'Estimated RRP']] = dfprice_rrp'. Now, all the missing values in the 'Estimated RRP' column have been populated.
 <br />
-<a href="#"><img src="picture/interpolated ERRP.png" width="900" height="400" alt="descriptive text" /></a>
+<a href="#"><img src="picture/interpolated estimated rrp.png" width="1200" height="500" alt="descriptive text" /></a>
 <br />
 <span style="color: rgba(0, 0, 0, 0.2);">Interpolate Column Estimated RRP</span>
 <br />
