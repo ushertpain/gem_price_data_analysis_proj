@@ -89,7 +89,7 @@ Regarding the 'Weight (cts)' column, which has only one null value, I utilized t
 ## Data Analysis
 I listed out initial questions I was interested in:
 - Q1: Averagely, what is the most pricey kind of gemstone?
-- Q2: How many emeralds are available in that store, and which other gemstones are green in color?
+- Q2: How many green emeralds are available in that store, and which other gemstones are mostly green in color?
 - Q3: Which gemstones are listed in the bottom 10 in terms of price but have a high Estimated RRP?
 - Q4: What is the most expensive gemstone in terms of treatment and clarity?
 - Q5: How many types and shapes are listed?
@@ -100,6 +100,13 @@ To address Q1, I will use Tableau and connect the "cleaned_gem_price_data.csv" d
 Upon observation, it becomes evident that the sapphire gemstone is the most expensive in the store during that particular time, with an average price of $5,621 and a total price listing of almost $900K. The calcite gemstone ranks 2nd, but upon investigation, it is revealed that there is only one listing of calcite at the moment, hence its total price listing remains the same. Tanzanite ranks 3rd in terms of average price.
 <br />
 <a href="#"><img src="picture/Q1.png" width="1200" height="500" alt="descriptive text" /></a>
+<br />
+<span style="color: rgba(0, 0, 0, 0.2);">Average Price by Gemstone Type</span>
+<br />
+<br />
+To address Q2, I will create a new sheet named "GreenGem" in Tableau. I will then place the Measure Name 'Gem type' into Rows and 'Price' into Columns, setting the measure to count to display the number of listings. Next, I will press Ctrl and drag 'CNT(Price)' from the Column field to the Marks Card Color, setting the color to green. To display the count of listings, I will repeat the previous step with 'CNT(Price)' and drag it to Label in the Marks Card. Upon observation, it is evident that there are a total of 35 listings for green emeralds on the gemstone online store. Notably, emerald ranks fourth in terms of frequency, while tourmaline, garnet, peridot, and sphene are among the top five most frequently listed green gemstones.
+<br />
+<a href="#"><img src="picture/Q2.png" width="1200" height="550" alt="descriptive text" /></a>
 <br />
 <span style="color: rgba(0, 0, 0, 0.2);">Average Price by Gemstone Type</span>
 <br />
