@@ -108,6 +108,19 @@ To address Q2, I will create a new sheet named "GreenGem" in Tableau. I will the
 <br />
 <a href="#"><img src="picture/Q2.png" width="1200" height="550" alt="descriptive text" /></a>
 <br />
-<span style="color: rgba(0, 0, 0, 0.2);">Average Price by Gemstone Type</span>
+<span style="color: rgba(0, 0, 0, 0.2);">Top Green Gemstones Listings</span>
+<br />
+<br />
+To answer Q3, I will create a new sheet where I will place Measure Values 'Price' and 'Estimated RRP' into Columns and set the measure to average. Then, I will place Measure Name 'Gem type' in Rows, which will automatically generate a bar chart showing the gemstone types and their corresponding average prices on the left. On the right side, the x-axis will display the average estimated RRP (Recommended Retail Price).
+
+To visualize the percentage difference between 'Price' and 'Estimated RRP', I will create a new calculated field by right-clicking in the Tables field, selecting "create calculated field," and naming it "Percentage Price Increase." The formula for this calculated field will be '((AVG([Estimated RRP]) - AVG([Price]) )/ AVG([Price])) * 100'. Once created, I will drag this calculated field into the Tooltip inside the Marks Card. I will then double-click the Tooltip and append '%' to the end of '<AGG(Percentage Price Increase)>' to display the percentage when hovering over the bars.
+
+Sorting the chart by Average Price will reveal high average Estimated RRP values corresponding to certain gemstone types. To filter the gemstones based on their average price, I will click the down arrow next to Gem type in the Rows field, select Filter, navigate to Top, then choose Bottom, 10, Price, average, and click OK.
+
+Observing the chart, it becomes apparent that moonstone has the highest estimated recommended retail price. By hovering over its bar, a staggering relative change of 8005% is displayed, with an average price of $140.68 and an estimated RRP of $11,401.
+<br />
+<a href="#"><img src="picture/Q3.png" width="1200" height="550" alt="descriptive text" /></a>
+<br />
+<span style="color: rgba(0, 0, 0, 0.2);">Comparing Bottom 10 Gemstones by Average Price to Estimated Retail Values</span>
 <br />
 <br />
