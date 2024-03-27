@@ -101,6 +101,6 @@ Upon observation, it becomes evident that the sapphire gemstone is the most expe
 <br />
 <a href="#"><img src="picture/Q1.png" width="1200" height="500" alt="descriptive text" /></a>
 <br />
-<span style="color: rgba(0, 0, 0, 0.2);">Interpolate Column Estimated RRP</span>
+<span style="color: rgba(0, 0, 0, 0.2);">Average Price by Gemstone Type</span>
 <br />
 <br />
