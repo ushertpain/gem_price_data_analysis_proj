@@ -7,7 +7,7 @@
 <br />
 
 ### Introduction
-Who isn't mesmerized by the beauty of gemstones? Personally, I favor green ones like emerald. In this project, I'll employ both Python and Tableau. Initially, I'll scrape data from a specific store on an online gemstone site. Subsequently, I'll clean and analyze the data using Python, and finally
+Who isn't mesmerized by the beauty of gemstones? Personally, I favor green ones like emerald. In this project, I'll employ both Python and Tableau. Initially, I'll scrape data from a specific store on an online gemstone site. Then I will perform data cleaning in Python and use Tableau to answer questions I am interested in.
 <br />
 <br />
 
@@ -72,10 +72,18 @@ Using this code 'df['Color'] = df['Title'].apply(get_color)' to extract each col
 <span style="color: rgba(0, 0, 0, 0.2);">Color and Gem Type</span>
 <br />
 <br />
-Finally, I will use pandas interpolate to fill up the missing values in the 'Estimated RRP' column. First, I'll create a copy of my DataFrame with only the 'Price' and 'Estimated RRP' columns, so I can use the 'interpolate()' pandas function. After that, I will transfer the values from the copy to my main DataFrame using this code 'df[['Price', 'Estimated RRP']] = dfprice_rrp'. Now, all the missing values in the 'Estimated RRP' column have been populated.
+The 6th step involves using pandas interpolate to fill up the missing values in the 'Estimated RRP' column. First, I'll create a copy of my DataFrame containing only the 'Price' and 'Estimated RRP' columns, allowing me to utilize the 'interpolate()' pandas function. Afterward, I will transfer the values from the copy to my main DataFrame using this code: 'df[['Price', 'Estimated RRP']] = dfprice_rrp'. Now, all the missing values in the 'Estimated RRP' column have been populated..
 <br />
 <a href="#"><img src="picture/interpolated estimated rrp.png" width="1200" height="500" alt="descriptive text" /></a>
 <br />
 <span style="color: rgba(0, 0, 0, 0.2);">Interpolate Column Estimated RRP</span>
 <br />
 <br />
+The final step is to ensure that my dataset has no null values. The best way to do this with Python is by using the code 'df.isnull().sum()'. The output of this code displays all column names along with the corresponding count of null values. Upon thorough investigation, I discovered that the 'Certified Gemstones', 'Treatment', 'Shape', 'Weight (cts)', and 'Type' columns contain null values.
+
+To address this issue, I will proceed to fill all null values. For the 'Certified Gemstones' column, I used the code 'df['Certified Gemstones'] = df['Certified Gemstones'].fillna('None Certified')', which replaces the null values in that column with the string 'None Certified'. Similarly, for the 'Treatment' column, I utilized the code 'df['Treatment'] = df['Treatment'].fillna('Unknown')' to change all null values to 'Unknown'. In the 'Shape' column, I employed the code 'df['Shape'] = df['Shape'].fillna('Unknown')' to replace null values with the string 'Unknown'.
+
+Regarding the 'Weight (cts)' column, which has only one null value, I utilized the interpolate() function in pandas to fill the missing value. Finally, for the 'Type' column, I applied the same approach, using the code 'df['Type'] = df['Type'].fillna('Unknown')' to convert null values to the string 'Unknown'.
+
+
+### Data Analysis
