@@ -6,12 +6,12 @@
 <br />
 <br />
 
-### Introduction
+## Introduction
 Who isn't mesmerized by the beauty of gemstones? Personally, I favor green ones like emerald. In this project, I'll employ both Python and Tableau. Initially, I'll scrape data from a specific store on an online gemstone site. Then I will perform data cleaning in Python and use Tableau to answer questions I am interested in.
 <br />
 <br />
 
-### Data Collection
+## Data Collection
 
 Using the Selenium and BeautifulSoup (bs4) packages, I was able to scrape data from a website where gemstones are listed in a grid of pictures. Clicking on a gemstone opens its source link, where you can view the price, title, and additional information about the gemstone. The picture below illustrates how the gemstones are listed on the site.
 <br />
@@ -36,7 +36,7 @@ Here is a preview of how the code scrapes the data:
 As you can see in the Spyder IDE, you can view the console where I display all the objects I scraped. In the picture above, you can see that 720 data points have already been scraped. You can also inspect the raw data collected by my scraper: [Click here!](https://github.com/ushertpain/gem_price_data_analysis_proj/blob/master/Gemstone_raw_data.csv)
 
 
-### Data Cleaning
+## Data Cleaning
 In this process, I utilized Jupyter Notebook. Firstly, I imported relevant libraries such as pandas. Secondly, I removed duplicates using the following line of code: 'df = df.drop_duplicates()', which reduced the size of the raw dataset from (2837, 10) to (2590, 10), resulting in the removal of 247 instances. Thirdly, I removed instances with no value in the 'Price' column using the following line of code: 'df = df[df['Price'].notna()]', which led to the deletion of 190 instances. Upon inspecting the data types of my pandas dataframe, I discovered that the 'Price' and 'Estimated RRP' columns were in object data type format. See the picture below.
 <br />
 <a href="#"><img src="picture/price and ERRP is object.png" width="375" height="200" alt="descriptive text" /></a>
@@ -86,4 +86,21 @@ To address this issue, I will proceed to fill all null values. For the 'Certifie
 Regarding the 'Weight (cts)' column, which has only one null value, I utilized the interpolate() function in pandas to fill the missing value. Finally, for the 'Type' column, I applied the same approach, using the code 'df['Type'] = df['Type'].fillna('Unknown')' to convert null values to the string 'Unknown'.
 
 
-### Data Analysis
+## Data Analysis
+I listed out initial questions I was interested in:
+- Q1: Averagely, what is the most pricey kind of gemstone?
+- Q2: How many emeralds are available in that store, and which other gemstones are green in color?
+- Q3: Which gemstones are listed in the bottom 10 in terms of price but have a high Estimated RRP?
+- Q4: What is the most expensive gemstone in terms of treatment and clarity?
+- Q5: How many types and shapes are listed?
+- Q6: What are the top 10 types of gemstones and their respective colors listed?
+
+To address Q1, I will use Tableau and connect the "cleaned_gem_price_data.csv" dataset. In Sheet 1, I will drag the 'Gem type' measure to the Column field. Then, in the Rows field, I will drag the 'Price' measure and calculate its average. Next, I will press ctrl and drag 'AVG(Price)' to the Marks Card Label to display the average price of each gemstone type. For color differentiation, in the Measure Values, I will drag the Price to the Marks Card Color and change the color to green.
+
+Upon observation, it becomes evident that the sapphire gemstone is the most expensive in the store during that particular time, with an average price of $5,621 and a total price listing of almost $900K. The calcite gemstone ranks 2nd, but upon investigation, it is revealed that there is only one listing of calcite at the moment, hence its total price listing remains the same. Tanzanite ranks 3rd in terms of average price.
+<br />
+<a href="#"><img src="picture/Q1.png" width="1200" height="500" alt="descriptive text" /></a>
+<br />
+<span style="color: rgba(0, 0, 0, 0.2);">Interpolate Column Estimated RRP</span>
+<br />
+<br />
