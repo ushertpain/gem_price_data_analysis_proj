@@ -129,5 +129,18 @@ Observing the chart, it becomes apparent that moonstone has the highest estimate
 <br />
 <br />
 ### What is the gemstone with the highest average price considering treatment and clarity?
+To address Q4, I will create a new sheet in Tableau. Firstly, I'll set up a heatmap by adding 'Treatment' to the Columns field and 'Clarity' to the Rows field. By changing the Marks Card to Square and adding the Measure Values 'Price' (set to average) to the Marks Color, the heatmap will display darker colors for higher average prices.
+
+Next, I'll add the average price numbers inside each box to represent the average price depending on the gemstone's clarity and treatment. This will be done by dragging 'AVG(Price)' to Text in the Marks Card.
+
+Observing the heatmap, it's notable that the combination of unknown clarity and heat treatment has the highest overall average price, totaling $2,680 with 40 listings at that time. To identify which gemstone has the highest average price at that time, I'll configure the Tooltip inside the Marks Card. I'll insert the first sheet I created, which contains all gemstone types and their average prices, and click OK.
+
+To visualize the gemstone with the highest average price at that moment, I'll return to the first sheet and sort the prices in descending order. Hovering over the darkest color on the heatmap with the value of 2680, it's revealed that the sapphire gemstone boasts the highest average price at $3,127.
+<br />
+<a href="#"><img src="picture/Q4.png" width="1200" height="550" alt="descriptive text" /></a>
+<br />
+<span style="color: rgba(0, 0, 0, 0.2);">Comparing Bottom 10 Gemstones by Average Price to Estimated Retail Values</span>
+<br />
+<br />
 ### Which gemstone shape has the highest average price among those with listings exceeding 50 at that time?
 ### What are the top 10 types of gemstones along with their respective colors?
