@@ -72,7 +72,7 @@ Using this code 'df['Color'] = df['Title'].apply(get_color)' to extract each col
 <span style="color: rgba(0, 0, 0, 0.2);">Color and Gem Type</span>
 <br />
 <br />
-The 6th step involves using pandas interpolate to fill up the missing values in the 'Estimated RRP' column. First, I'll create a copy of my DataFrame containing only the 'Price' and 'Estimated RRP' columns, allowing me to utilize the 'interpolate()' pandas function. Afterward, I will transfer the values from the copy to my main DataFrame using this code: 'df[['Price', 'Estimated RRP']] = dfprice_rrp'. Now, all the missing values in the 'Estimated RRP' column have been populated..
+The 6th step involves using pandas interpolate to fill up the missing values in the 'Estimated RRP' column. First, I'll create a copy of my DataFrame containing only the 'Price' and 'Estimated RRP' columns, allowing me to utilize the 'interpolate()' pandas function. Afterward, I will transfer the values from the copy to my main DataFrame using this code: 'df[['Price', 'Estimated RRP']] = dfprice_rrp'. Now, all the missing values in the 'Estimated RRP' column have been populated.
 <br />
 <a href="#"><img src="picture/interpolated estimated rrp.png" width="1200" height="500" alt="descriptive text" /></a>
 <br />
@@ -191,3 +191,26 @@ It's also observable that garnet and tourmaline are almost always present in dif
 <span style="color: rgba(0, 0, 0, 0.2);">Top 10 Green Gemstones Listed</span>
 <br />
 <br />
+### Conclusion
+In this data analysis process, I employed various techniques and tools to gather, clean, and analyze data from an online gemstone store. Here's a summary of the key steps and findings:
+
+1. Data Scraping: Utilized Selenium and BeautifulSoup to scrape data from a website listing gemstones. Extracted details such as price, title, and additional information by clicking on individual gemstones.
+
+2. Data Cleaning: Faced challenges such as duplicate data and format inconsistencies. Used pandas in Jupyter Notebook to clean the dataset, including removing duplicates, handling missing values, and converting data types.
+
+3. Data Analysis:
+- Identified sapphire as the most expensive gemstone based on average price, followed by calcite and tanzanite.
+- Discovered a total of 35 listings for green emeralds, with emerald being the fourth most frequent green gemstone.
+- Observed moonstone as having the highest estimated recommended retail price, along with a significant relative change percentage compared to its average price.
+- Analyzed a heatmap to identify the gemstone with the highest average price, which was found to be sapphire.
+- Created a bubble chart to identify and visualize gemstone shapes with over 50 listings along with their corresponding average prices.
+- Identified garnet as the top gemstone in terms of the number of listings, with further insights into the top listings for different gemstone colors.
+
+4. Troubleshooting and Refinement: Encountered various challenges during the data scraping and cleaning processes, including error handling and unexpected errors. Employed strategies such as try-except blocks and data context adjustments to address these issues effectively.
+
+Overall, through meticulous data gathering, cleaning, and analysis techniques, valuable insights were obtained regarding gemstone listings, prices, and characteristics, contributing to a deeper understanding of the online gemstone market.
+
+
+
+
+
