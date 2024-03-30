@@ -143,4 +143,17 @@ To visualize the gemstone with the highest average price at that moment, I'll re
 <br />
 <br />
 ### Which gemstone shape has the highest average price among those with listings exceeding 50 at that time?
+To address Q5, I will use a Bubble Chart. Firstly, I'll create a new sheet and add 'Shape' to the column field, then I'll add 'Price' (set to average) to the Rows field. In the upper right corner, I'll click on Show Me and select the bubble chart option.
+
+To add color where darker shades represent higher average prices, I'll press ctrl and click on 'AVG(Price)' inside the Marks Card, then drag it to the Color.
+
+Since I'm interested in shapes with over 50 listings only, I'll filter the Shape by clicking the small down arrow next to 'Shape' inside the Marks Card, then select Filter. Inside the Filter box, I'll click on Condition, select 'By field', choose Price, then Count, select 'greater than', input 50, and click OK.
+
+By examining the chart, it becomes evident that Oval, Heart, and Unknown shapes have the highest average prices. Hovering over each circle reveals that Oval shape ranks first with an average price of $1,481, followed by Heart shape with $1,409, and Unknown shape with $1,296 average price at that time. To ensure viewers can clearly see the average prices, I'll add 'AVG(Price)' to the Text inside the Marks Card, and 'CNT(Price)' to Details, so when hovering over each bubble, they can see the total number of listings.
+<br />
+<a href="#"><img src="picture/Q5.png" width="1200" height="550" alt="descriptive text" /></a>
+<br />
+<span style="color: rgba(0, 0, 0, 0.2);">Comparing Bottom 10 Gemstones by Average Price to Estimated Retail Values</span>
+<br />
+<br />
 ### What are the top 10 types of gemstones along with their respective colors?
