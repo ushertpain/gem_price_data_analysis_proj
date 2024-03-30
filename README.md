@@ -176,7 +176,7 @@ To address this issue, I will right-click the 'Colors' inside the Filters Card, 
   
 It's also observable that garnet and tourmaline are almost always present in different color categories, indicating that these gemstones likely have the highest supply at that moment.
 <br />
-<a href="#"><img src="picture/Q6.png" width="1200" height="550" alt="descriptive text" /></a>
+<a href="#"><img src="picture/Q6.png" width="1200" height="375" alt="descriptive text" /></a>
 <br />
 <span style="color: rgba(0, 0, 0, 0.2);">Top 10 Green Gemstones Listed</span>
 <br />
