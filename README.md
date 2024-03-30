@@ -157,3 +157,27 @@ By examining the chart, it becomes evident that Oval, Heart, and Unknown shapes 
 <br />
 <br />
 ### What are the top 10 types of gemstones along with their respective colors?
+Finally, to address Q6, I will add a new sheet. Inside the Columns field, I will drag 'Price' set to count, and 'Gem type' in the Rows field. To add color, I will press Ctrl and drag 'CNT(Price)' to the Color inside the Marks card. Just to see the top 10 only, I will click the down arrow next to 'Gem type' in the Rows field, then Filter. Inside the filter box, I will click Top, then choose: By field, Top, 10, Price, then Count, and click OK. Click the icon near the x-axis label and sort it in descending order. Now, drag the 'Color' into Filters, Choose all colors first then click OK. Looking at the chart, we see that overall the top gemstone is garnet with 233 listings. To ensure it displays the correct listings, I will right-click the 'Color' inside the Filters Card, then click 'Add to Context'. After that, as I filter one color at a time, I noticed some discrepancies in the output of the charts. When I clear the top 10 filter in the 'Gemstone type', the results for the top listings differ from when I filter it to show only the top 10. Check the image below.
+<br />
+<a href="#"><img src="picture/Q6 problem.png" width="1200" height="550" alt="descriptive text" /></a>
+<br />
+<span style="color: rgba(0, 0, 0, 0.2);">Top 10 Filters Discrepancies</span>
+<br />
+<br />
+To address this issue, I will right-click the 'Colors' inside the Filters Card, then click 'Add to Context', which resolves the problem. Here are the results for the top gemstone based on the number of listings:
+- Blue: Topaz
+- Green: Tourmaline
+- Natural: Diaspore
+- Orange: Garnet
+- Pink: Tourmaline
+- Purple: Amethyst
+- Red: Coral
+- Yellow: Beryl
+  
+It's also observable that garnet and tourmaline are almost always present in different color categories, indicating that these gemstones likely have the highest supply at that moment.
+<br />
+<a href="#"><img src="picture/Q6.png" width="1200" height="550" alt="descriptive text" /></a>
+<br />
+<span style="color: rgba(0, 0, 0, 0.2);">Top 10 Green Gemstones Listed</span>
+<br />
+<br />
