@@ -129,6 +129,16 @@ Observing the chart, it becomes apparent that moonstone has the highest estimate
 <br />
 <br />
 ### What is the gemstone with the highest average price considering treatment and clarity?
+In gemology, clarity grades are often represented by acronyms to indicate the level of imperfections or inclusions present in a gemstone. Here are some common clarity acronyms used at that time and their meanings:
+- VVS (Very, Very Small inclusions)
+- VVS, VS (Very, Very Small inclusions, Very Small inclusions)
+- VS, SI (Very Small inclusions, Small Inclusions)
+- VVS, VVS, VS (Very, Very Small inclusions, Very, Very Small inclusions, Very Small inclusions)
+- VS (Very Small inclusions)
+- SI (Small Inclusions)
+- VVS, SI ( Very, Very Small inclusions, Small Inclusions)
+- I (Included)
+
 To address Q4, I will create a new sheet in Tableau. Firstly, I'll set up a heatmap by adding 'Treatment' to the Columns field and 'Clarity' to the Rows field. By changing the Marks Card to Square and adding the Measure Values 'Price' (set to average) to the Marks Color, the heatmap will display darker colors for higher average prices.
 
 Next, I'll add the average price numbers inside each box to represent the average price depending on the gemstone's clarity and treatment. This will be done by dragging 'AVG(Price)' to Text in the Marks Card.
