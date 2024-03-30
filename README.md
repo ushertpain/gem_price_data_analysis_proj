@@ -139,7 +139,7 @@ To visualize the gemstone with the highest average price at that moment, I'll re
 <br />
 <a href="#"><img src="picture/Q4.png" width="1200" height="550" alt="descriptive text" /></a>
 <br />
-<span style="color: rgba(0, 0, 0, 0.2);">Comparing Bottom 10 Gemstones by Average Price to Estimated Retail Values</span>
+<span style="color: rgba(0, 0, 0, 0.2);">Title: Heatmap: Average Price by Treatment and Clarity, Tooltip: Hover for Top Gemstone Rankinge</span>
 <br />
 <br />
 ### Which gemstone shape has the highest average price among those with listings exceeding 50 at that time?
@@ -153,7 +153,7 @@ By examining the chart, it becomes evident that Oval, Heart, and Unknown shapes 
 <br />
 <a href="#"><img src="picture/Q5.png" width="1200" height="550" alt="descriptive text" /></a>
 <br />
-<span style="color: rgba(0, 0, 0, 0.2);">Comparing Bottom 10 Gemstones by Average Price to Estimated Retail Values</span>
+<span style="color: rgba(0, 0, 0, 0.2);">Bubble Chart: Shapes with Over 50 Listings by Average Price</span>
 <br />
 <br />
 ### What are the top 10 types of gemstones along with their respective colors?
