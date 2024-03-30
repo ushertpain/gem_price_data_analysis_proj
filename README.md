@@ -91,10 +91,12 @@ I listed out initial questions I was interested in:
 - Q1: Averagely, what is the most pricey kind of gemstone?
 - Q2: How many green emeralds are available in that store, and which other gemstones are mostly green in color?
 - Q3: Which gemstones are listed in the bottom 10 in terms of price but have a high Estimated RRP?
-- Q4: What is the most expensive gemstone in terms of treatment and clarity?
-- Q5: How many types and shapes are listed?
-- Q6: What are the top 10 types of gemstones and their respective colors listed?
+- Q4: What is the gemstone with the highest average price considering treatment and clarity?
+- Q5: Which gemstone shape has the highest average price among those with listings exceeding 50 at that time?
+- Q6: What are the top 10 types of gemstones along with their respective colors?
 
+
+### Averagely, what is the most pricey kind of gemstone?
 To address Q1, I will use Tableau and connect the "cleaned_gem_price_data.csv" dataset. In Sheet 1, I will drag the 'Gem type' measure to the Column field. Then, in the Rows field, I will drag the 'Price' measure and calculate its average. Next, I will press ctrl and drag 'AVG(Price)' to the Marks Card Label to display the average price of each gemstone type. For color differentiation, in the Measure Values, I will drag the Price to the Marks Card Color and change the color to green.
 
 Upon observation, it becomes evident that the sapphire gemstone is the most expensive in the store during that particular time, with an average price of $5,621 and a total price listing of almost $900K. The calcite gemstone ranks 2nd, but upon investigation, it is revealed that there is only one listing of calcite at the moment, hence its total price listing remains the same. Tanzanite ranks 3rd in terms of average price.
@@ -104,6 +106,7 @@ Upon observation, it becomes evident that the sapphire gemstone is the most expe
 <span style="color: rgba(0, 0, 0, 0.2);">Average Price by Gemstone Type</span>
 <br />
 <br />
+### How many green emeralds are available in that store, and which other gemstones are mostly green in color?
 To address Q2, I will create a new sheet named "GreenGem" in Tableau. I will then place the Measure Name 'Gem type' into Rows and 'Price' into Columns, setting the measure to count to display the number of listings. Next, I will press Ctrl and drag 'CNT(Price)' from the Column field to the Marks Card Color, setting the color to green. To display the count of listings, I will repeat the previous step with 'CNT(Price)' and drag it to Label in the Marks Card. Upon observation, it is evident that there are a total of 35 listings for green emeralds on the gemstone online store. Notably, emerald ranks fourth in terms of frequency, while tourmaline, garnet, peridot, and sphene are among the top five most frequently listed green gemstones.
 <br />
 <a href="#"><img src="picture/Q2.png" width="1200" height="550" alt="descriptive text" /></a>
@@ -111,6 +114,7 @@ To address Q2, I will create a new sheet named "GreenGem" in Tableau. I will the
 <span style="color: rgba(0, 0, 0, 0.2);">Top Green Gemstones Listings</span>
 <br />
 <br />
+### Which gemstones are listed in the bottom 10 in terms of price but have a high Estimated RRP?
 To answer Q3, I will create a new sheet where I will place Measure Values 'Price' and 'Estimated RRP' into Columns and set the measure to average. Then, I will place Measure Name 'Gem type' in Rows, which will automatically generate a bar chart showing the gemstone types and their corresponding average prices on the left. On the right side, the x-axis will display the average estimated RRP (Recommended Retail Price).
 
 To visualize the percentage difference between 'Price' and 'Estimated RRP', I will create a new calculated field by right-clicking in the Tables field, selecting "create calculated field," and naming it "Percentage Price Increase." The formula for this calculated field will be '((AVG([Estimated RRP]) - AVG([Price]) )/ AVG([Price])) * 100'. Once created, I will drag this calculated field into the Tooltip inside the Marks Card. I will then double-click the Tooltip and append '%' to the end of '<AGG(Percentage Price Increase)>' to display the percentage when hovering over the bars.
@@ -124,3 +128,6 @@ Observing the chart, it becomes apparent that moonstone has the highest estimate
 <span style="color: rgba(0, 0, 0, 0.2);">Comparing Bottom 10 Gemstones by Average Price to Estimated Retail Values</span>
 <br />
 <br />
+### What is the gemstone with the highest average price considering treatment and clarity?
+### Which gemstone shape has the highest average price among those with listings exceeding 50 at that time?
+### What are the top 10 types of gemstones along with their respective colors?
