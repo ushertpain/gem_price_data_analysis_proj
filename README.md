@@ -218,9 +218,9 @@ Thank you for reading. Have a pleasant day!
 <br />
 <br />
 
-Side note: I am also interested in exploring how the price, gemstone, and the listing behavior changes when filtered by Color, Type, etc. Therefore, I have created an interactive dashboard featuring average price, price standard deviation, and number of listings as my key performance indicators (KPIs). You may check out my dashboard in Tableau here: [Tableau link](https://public.tableau.com/app/profile/virfrance.gabas/viz/GemstoneProj/GemstoneDashBoard)
+Side note: I am also interested in exploring how the price, gemstone, and the listing behavior changes when filtered by Color, Weight, etc. Therefore, I have created an interactive dashboard featuring average price, price standard deviation, and number of listings as my key performance indicators (KPIs). You may check out my dashboard in Tableau here: [Tableau link](https://public.tableau.com/app/profile/virfrance.gabas/viz/GemstoneProj/GemstoneDashBoard)
 <br />
-<a href="#"><img src="picture/preview_dashboard.png" width="1200" height="700" alt="descriptive text" /></a>
+<a href="#"><img src="picture/ssDashboard.png" width="1200" height="700" alt="descriptive text" /></a>
 <br />
 <span style="color: rgba(0, 0, 0, 0.2);">Preview of my Dashboard</span>
 <br />
